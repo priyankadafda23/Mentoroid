@@ -8,7 +8,6 @@ from routes.notifications import notif_bp
 from routes.youtube import youtube_bp
 from routes.quiz import quiz_bp
 from leaderboard import leaderboard_bp
-from routes.contact import contact_bp
 
 import os
 from dotenv import load_dotenv
@@ -37,7 +36,6 @@ app.register_blueprint(dashboard_bp)
 app.register_blueprint(notif_bp)
 app.register_blueprint(youtube_bp)
 app.register_blueprint(leaderboard_bp)
-app.register_blueprint(contact_bp)
 
 
 with app.app_context():
