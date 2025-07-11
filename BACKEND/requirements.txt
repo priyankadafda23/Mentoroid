@@ -10,5 +10,4 @@ python-dotenv
 itsdangerous
 Werkzeug
 WTForms
-traceback
 cloudinary
