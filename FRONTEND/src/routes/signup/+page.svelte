@@ -148,15 +148,12 @@
           name="password"
           class="form-control"
           bind:value={password}
-          required
-        />
-        <i
-          class="ri-eye-line toggle-password"
-          on:click={() => (showPassword = !showPassword)}
-          class:ri-eye-off-line={!showPassword}
-         style="padding-top:26px"></i>
-      </div>
-      </div>
+          required  />
+          <i
+            class={`toggle-password ri-eye-line ${!showPassword ? 'ri-eye-off-line' : ''}`}
+            on:click={() => showPassword = !showPassword}
+          ></i>
+</div>
 
       <div class="form-group">
         <label><i class="ri-image-add-line me-1"></i>Profile Image</label>
