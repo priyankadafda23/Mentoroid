@@ -44,13 +44,13 @@
   <footer class="footer">
     <h2>📩 Contact Us</h2>
         <div class="row contact-methods mt-3">
-            <div class="col-md-3">
+            <div class="col-md-6">
                   <a href="https://www.instagram.com/priyankadafda23" target="_blank">
                      <i class="fa-brands fa-instagram"></i>
                         <p>Instagram: <br> priyankadafda23</p>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <a href="https://www.linkedin.com/in/priyanka-dafda-672494306/" target="_blank">
                             <i class="bi bi-linkedin"></i>
                             <p>Linkedin: <br>priyankadafda</p>
