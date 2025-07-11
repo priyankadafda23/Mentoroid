@@ -61,6 +61,7 @@
                 </div>
 <div class="col-md-3">
                     </div>
+<hr>
                 <div class="row">
                     <p class="text-center"><br>&copy; 2025 Mentoroid Education Platform. All rights reserved.</p>
                 </div>
