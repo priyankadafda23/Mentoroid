@@ -87,13 +87,13 @@
           <li class="nav-item d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
             <button class="btn btn-outline-light" on:click={logout}>Logout</button>
             <button class="btn btn-outline-light">
-              <a href="mailto:priyankadafda.sdmify@gmail.com">📩 Contact Us</a>
+              <a href="mailto:priyankadafda.sdmify@gmail.com" target="_blank">📩 Contact Us</a>
             </button>
           </li>
         {:else}
           <li class="nav-item"><a class="nav-link" href="/signup">📝Register</a></li>
           <li class="nav-item"><a class="nav-link" href="/login">🔐Login</a></li>
-          <a href="mailto:priyankadafda.sdmify@gmail.com" class="btn btn-outline-light ms-2">📩 Contact Us</a>
+          <a href="mailto:priyankadafda.sdmify@gmail.com" target="_blank" class="btn btn-outline-light ms-2">📩 Contact Us</a>
         {/if}
       </ul>
     </div>
