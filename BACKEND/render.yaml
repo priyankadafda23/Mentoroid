@@ -5,4 +5,8 @@ services:
     plan : free
     buildCommand : ""
     startCommand : gunicorn app:app
+<<<<<<< HEAD
     reguion : oregon 
+=======
+    reguion : oregon 
+>>>>>>> 000c174adb947c3e4df79f92ec8a00cf5db5d202
