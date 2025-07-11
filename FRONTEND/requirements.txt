@@ -1,1 +1,1 @@
-npm install @zerodevx/svelte-toast
+@zerodevx/svelte-toast
