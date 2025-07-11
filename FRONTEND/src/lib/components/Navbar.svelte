@@ -87,7 +87,7 @@
           <li class="nav-item d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
             <button class="btn btn-outline-light" on:click={logout}>Logout</button>
             <button class="btn btn-outline-light">
-              <a href="/contact">📩 Contact Us</a>
+              <a href="mailto:priyankadafda.sdmify@gmail.com">📩 Contact Us</a>
             </button>
           </li>
         {:else}
