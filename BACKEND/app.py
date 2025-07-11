@@ -16,9 +16,9 @@ app = Flask(__name__)
 load_dotenv()
 
 
-CORS(app, origins=["https://mentoroid-zeta.vercel.app"],
-        supports_credentials=True, 
-        resources={r"/*": {"origins": os.getenv("CORS_ORIGINS")}})
+CORS(app, 
+     origins=["https://mentoroid-zeta.vercel.app"],
+     supports_credentials=True)
 
 
 
