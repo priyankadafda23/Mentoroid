@@ -141,7 +141,7 @@
         <input type="email" name="email" bind:value={email} required />
       </div>
 
-      <div class="form-group">
+      <div class="form-group position-relative">
         <label><i class="ri-lock-password-line me-1"></i>Password</label>
         <input
           type={showPassword ? "text" : "password"}
