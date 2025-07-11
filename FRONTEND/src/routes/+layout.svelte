@@ -42,7 +42,24 @@
 <div class="main-content">
   <slot />
   <footer class="footer">
-    <p>&copy; 2025 AI Education Portal. All rights reserved.</p>
+    <h2>📩 Contact Us</h2>
+        <div class="row contact-methods mt-3">
+            <div class="col-md-3">
+                  <a href="https://www.instagram.com/priyankadafda23" target="_blank">
+                     <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram: <br> priyankadafda23</p>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.linkedin.com/in/priyanka-dafda-672494306/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                            <p>Linkedin: <br>priyankadafda</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="text-center"><br>&copy; 2025 Mentoroid Education Platform. All rights reserved.</p>
+                </div>
   </footer>
 
 </div>
