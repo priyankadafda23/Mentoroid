@@ -1,0 +1,14 @@
+Flask
+Flask-Cors
+Flask-Bcrypt
+Flask-Login
+Flask-Mail
+Flask-WTF
+Flask-SQLAlchemy
+email-validator
+python-dotenv
+itsdangerous
+Werkzeug
+WTForms
+traceback
+cloudinary
