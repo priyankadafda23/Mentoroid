@@ -93,7 +93,7 @@
         {:else}
           <li class="nav-item"><a class="nav-link" href="/signup">📝Register</a></li>
           <li class="nav-item"><a class="nav-link" href="/login">🔐Login</a></li>
-          <a href="/contact" class="btn btn-outline-light ms-2">📩 Contact Us</a>
+          <a href="mailto:priyankadafda.sdmify@gmail.com" class="btn btn-outline-light ms-2">📩 Contact Us</a>
         {/if}
       </ul>
     </div>
