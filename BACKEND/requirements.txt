@@ -13,3 +13,4 @@ itsdangerous
 Werkzeug
 WTForms
 cloudinary
+requests
