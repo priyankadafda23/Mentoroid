@@ -106,7 +106,14 @@
   100% { transform: scale(1) translate(0, 0); }
 }
 
-
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+  }
 </style>
 
 
@@ -135,7 +142,18 @@
 
       <div class="form-group">
         <label><i class="ri-lock-password-line me-1"></i>Password</label>
-        <input type="password" name="password" bind:value={password} required />
+        <input
+          type={showPassword ? "text" : "password"}
+          name="password"
+          class="form-control"
+          bind:value={password}
+          required
+        />
+        <i
+          class="ri-eye-line toggle-password"
+          on:click={() => (showPassword = !showPassword)}
+          class:ri-eye-off-line={!showPassword}
+         style="padding-top:26px"></i>
       </div>
 
       <div class="form-group">
