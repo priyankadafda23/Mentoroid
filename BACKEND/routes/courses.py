@@ -3,11 +3,12 @@ from models import db, User, Course, Enrollment, Notification
 import os
 from dotenv import load_dotenv
 import cloudinary
+import cloudinary.uploader
 
 course_bp = Blueprint('course', __name__)
 load_dotenv()
 
-cloud = cloudinary.config(
+cloudinary.config(
     cloud_name=os.getenv("cloud_name"),
     api_key=os.getenv("api_key"),
     api_secret=os.getenv("api_secret")
@@ -35,7 +36,7 @@ def create_course():
 
         thumbnail_url = None
         if thumbnail_file:
-            upload_result = cloud.uploader.upload(thumbnail_file)
+            upload_result = cloudinary.uploader.upload(thumbnail_file)
             thumbnail_url = upload_result['secure_url']
 
         new_course = Course(
@@ -166,7 +167,7 @@ def update_course(course_id):
         if youtube_link:
             course.youtube_link = youtube_link
         if thumbnail_file:
-            upload_result = cloud.uploader.upload(thumbnail_file)
+            upload_result = cloudinary.uploader.upload(thumbnail_file)
             course.thumbnail = upload_result['secure_url']
 
         db.session.commit()

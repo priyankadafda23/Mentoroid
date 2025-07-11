@@ -7,12 +7,13 @@ from dotenv import load_dotenv
 from werkzeug.utils import secure_filename
 from flask import current_app
 import cloudinary
+import cloudinary.uploader
 
 
 auth_bp = Blueprint('auth', __name__)
 load_dotenv()
 
-cloud = cloudinary.config(
+cloudinary.config(
     cloud_name=os.getenv("cloud_name"),
     api_key=os.getenv("api_key"),
     api_secret=os.getenv("api_secret")
@@ -54,7 +55,7 @@ def signup():
         # 4. Upload image to Cloudinary
         image_url = None
         if image_file:
-            result = cloud.uploader.upload(image_file)
+            result = cloudinary.uploader.upload(image_file)
             image_url = result.get("secure_url")
 
         # 5. Create user
