@@ -152,6 +152,7 @@
           <i
             class={`toggle-password ri-eye-line ${!showPassword ? 'ri-eye-off-line' : ''}`}
             on:click={() => showPassword = !showPassword}
+            style="padding-top:26px"
           ></i>
 </div>
 
